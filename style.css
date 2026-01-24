@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Inter, sans-serif;
+}
+
+body {
+  background: black;
+  color: white;
+  overflow-x: hidden;
+}
+
+canvas {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+}
+
+section {
+  padding: 100px 10%;
+}
+
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero h1 {
+  font-size: 64px;
+}
+
+.hero-buttons a {
+  margin-right: 15px;
+  padding: 10px 20px;
+  border: 1px solid white;
+  text-decoration: none;
+  color: white;
+}
+
+.skill-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.project {
+  margin-top: 20px;
+}
+
+.project a {
+  margin-right: 10px;
+  color: cyan;
+}
+
+footer {
+  text-align: center;
+  padding: 40px;
+  opacity: 0.6;
+}
+
+/* CUSTOM CURSOR */
+.cursor {
+  width: 10px;
+  height: 10px;
+  background: cyan;
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+}
