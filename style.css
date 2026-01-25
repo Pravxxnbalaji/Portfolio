@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background: #050505;
+  color: white;
+  overflow: hidden;
+}
+
+/* GRID CANVAS */
+canvas {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+}
+
+/* NAVBAR */
+nav {
+  position: fixed;
+  top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  font-size: 14px;
+  opacity: 0.85;
+}
+
+nav .logo {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hello {
+  letter-spacing: 3px;
+  font-size: 12px;
+  opacity: 0.7;
+  margin-bottom: 10px;
+}
+
+.hero h1 {
+  font-size: 64px;
+  font-weight: 800;
+}
+
+.hero h1 span {
+  background: linear-gradient(90deg, #b3a7ff, #7f9cff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.subtitle {
+  opacity: 0.7;
+  margin-top: 10px;
+}
+
+/* BUTTONS */
+.buttons {
+  margin-top: 30px;
+  display: flex;
+  gap: 20px;
+}
+
+button {
+  padding: 12px 24px;
+  border-radius: 30px;
+  border: none;
+  background: #1a1a1a;
+  color: white;
+  cursor: pointer;
+}
+
+button.outline {
+  background: transparent;
+  border: 1px solid #333;
+}
+
+/* CURSOR */
+.cursor {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #b3a7ff;
+  position: fixed;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+}
